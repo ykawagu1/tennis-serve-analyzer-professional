@@ -3,7 +3,7 @@ opencv-python==4.12.0.88
 gunicorn
 flask
 flask-cors
-mediapipe
+mediapipe==0.10.14
 Pillow
 opencv-python-headless
 openai
