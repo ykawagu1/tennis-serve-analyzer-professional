@@ -293,9 +293,10 @@ def cleanup_endpoint():
     return jsonify({"deleted": deleted})
 
 if __name__ == '__main__':
+    import argparse
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--port', type=int, default=5000, help='Port number')
     args = parser.parse_args()
 
-    logger.info("テニスサーブ解析システム起動中...")
     app.run(host='0.0.0.0', port=args.port, debug=True)
