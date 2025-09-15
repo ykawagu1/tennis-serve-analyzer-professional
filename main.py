@@ -104,14 +104,6 @@ def ffmpeg_one_shot(input_path, output_path, rotate, target_res=(960, 540), targ
         logger.error(f"ffmpeg一発変換失敗: {e.stderr.decode()}")
         return input_path
 
-@app.route('/')
-def index():
-    return app.send_static_file("index.html")
-
-@app.route('/health', methods=['GET'])
-def health():
-    return 'OK', 200
-
 @app.route('/api/analyze', methods=['POST'])
 def analyze_video():
     print('[HIT] /api/analyze', request.headers.get('Content-Length'))
@@ -291,6 +283,10 @@ def cleanup_endpoint():
                     deleted.append(f"削除エラー {path}: {e}")
 
     return jsonify({"deleted": deleted})
+
+@app.route("/")
+def index():
+    return "OK", 200
 
 if __name__ == '__main__':
     import argparse
