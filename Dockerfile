@@ -25,4 +25,4 @@ ENV PYTHONUNBUFFERED=1
 EXPOSE 5000
 
 # Flask を gunicorn で起動
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "main:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:${PORT}", "main:app"]
