@@ -1,0 +1,9 @@
+numpy==2.2.6
+opencv-python==4.12.0.88
+gunicorn
+flask
+flask-cors
+mediapipe
+Pillow
+opencv-python-headless
+openai
