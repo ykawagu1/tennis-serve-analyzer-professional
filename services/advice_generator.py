@@ -321,7 +321,7 @@ class AdviceGenerator:
             elif language == "en":
                 concerns_text = f"\n\n[User's specific concern(s)]\n{user_concerns}\n\nFocus on the above concern(s) and include concrete, practical advice."
             elif language == "es":
-                concerns_text = f"\n\n[Inquietud(es) específica(s) del usuario]\n{user_concerns}\n\nEnfócate en la(s) inquietud(es) mencionada(s) e incluye consejos concretos
+                concerns_text = f"\n\n[Inquietud(es) específica(s) del usuario]\n{user_concerns}\n\nEnfócate en la(s) inquietud(es) mencionada(s) e incluye consejos concretos y prácticos."
             elif language == "pt":
                 concerns_text = f"\n\n[Preocupação(ões) específica(s) do usuário]\n{user_concerns}\n\nFoque nas preocupações acima e inclua conselhos concretos e práticos."
             elif language == "fr":
